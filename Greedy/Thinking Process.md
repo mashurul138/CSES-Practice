@@ -7,6 +7,14 @@ Apartment :
 Concert Ticket:
 
 1. First idea was finding upper bound 
-2. used multiset to erase used values in nlongn time 
+2. used multiset to erase used values in nlongn time
+
+
+Restaurant Customers
+1. event sorting
+2. push +1 when arriving , push -1 when leaving
+3. sort them
+4. find max
+
 
 
