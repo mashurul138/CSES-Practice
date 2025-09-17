@@ -5,5 +5,7 @@ Apartment :
 
 
 Concert Ticket:
-1.First idea was finding upper bound 
+
+1. First idea was finding upper bound 
 2. used multiset to erase used values in nlongn time 
+
