@@ -1,0 +1,4 @@
+Apartment :
+1. sorting both array to get maximum matching
+2. tried binary search but failed
+3. then used two pointer method : if apartment fits then move both i and j , if appartment too small increment apartment, if apartment too big incremnt applicant
