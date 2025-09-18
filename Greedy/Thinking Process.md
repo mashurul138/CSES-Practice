@@ -22,5 +22,12 @@ Movie Fesival
 2. to get maximun value first we need to chose the movies with first ending time ! so we must need to sort the movies based on their ending time
 
 
+Sum of two values
+1. using two pointer method to avoid tle
+2. if sum of two values == to x then we are printing it
+3. if sum of two values < x then we are increasing i (start point)
+4. if sum of two values > x then we are decreasinf j (end point)
+5. using pair to store to store original index after sorting !
+
 
 
