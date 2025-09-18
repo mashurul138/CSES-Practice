@@ -19,3 +19,8 @@
 ## [Counting Divisors](https://cses.fi/problemset/task/1713/)
 **Thoughts:**  
 1. count divisors till root(x) multiply by 2, if divisor*divisor = x then count 1.
+
+## [Common Divisors](https://cses.fi/problemset/task/1081/)
+**Thoughts:**  
+1. The largest GCD divides minimum 2 numbers in the array.
+2. So assume max value in the array is the gcd, count the frequency of the divisors, if the count if greater than or equal to 2 then, this is the highest GCD value.
