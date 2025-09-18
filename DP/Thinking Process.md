@@ -3,3 +3,6 @@ Only possible way is 6. If n is my target then we can find the number of ways re
 
 # Coin Minimizing
 We got unlimited supple of coin P[i]. We need to combine each coin to get the target. We get to the target by seeing the previous best result. 
+
+# Coin Minimizing 1
+Same as before but instead of calculating the minimum, we are adding the all possible ways
