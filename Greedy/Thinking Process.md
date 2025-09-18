@@ -30,4 +30,10 @@ Sum of two values
 5. using pair to store to store original index after sorting !
 
 
+Maximum subarray sum
+1. used kadanes algo
+2. main idea is Keep track of the current sum of the subarray ending at the current index. If adding the current element makes the sum worse (less than just starting fresh from this element), restart the sum. Keep track of the maximum sum (mx) seen so far.
+
+
+
 
