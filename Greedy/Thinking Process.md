@@ -17,4 +17,10 @@ Restaurant Customers
 4. find max
 
 
+Movie Fesival
+1. Greedy activity selection problem
+2. to get maximun value first we need to chose the movies with first ending time ! so we must need to sort the movies based on their ending time
+
+
+
 
