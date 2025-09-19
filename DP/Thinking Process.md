@@ -8,5 +8,6 @@ We got unlimited supple of coin P[i]. We need to combine each coin to get the ta
 Same as before but instead of calculating the minimum, we are adding the all possible ways
 
 # Removing Digits
+[https://cses.fi/problemset/task/1637/](https://cses.fi/problemset/task/1637/)  
 There's two way of doing this, 1. Applying greedy method, selecting the max digit and then subtracting it. And 2. dp;
 Iterating all the possibilities until found the min result. And keeping the result stored in DP table
