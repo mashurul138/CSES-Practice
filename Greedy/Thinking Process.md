@@ -35,5 +35,17 @@ Maximum subarray sum
 2. main idea is Keep track of the current sum of the subarray ending at the current index. If adding the current element makes the sum worse (less than just starting fresh from this element), restart the sum. Keep track of the maximum sum (mx) seen so far.
 
 
+Stick Length
+1. basic idea was finding the value in the middle and add the absolute diffrence of that with all other values in the array in a variable !
+2. edge case could be when n is even , in this case we have to consider to values in the middle n/2 and n/2+1.
+
+
+Missing Coin Sum 
+1. This code sorts the coins and keeps extending the smallest unmakeable sum smallest until it finds a coin larger than smallest, at which point smallest is the answer.
+
+
+
+
+
 
 
