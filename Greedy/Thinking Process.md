@@ -40,6 +40,10 @@ Stick Length
 2. edge case could be when n is even , in this case we have to consider to values in the middle n/2 and n/2+1.
 
 
+Missing Coin Sum 
+1.This code sorts the coins and keeps extending the smallest unmakeable sum smallest until it finds a coin larger than smallest, at which point smallest is the answer.
+
+
 
 
 
