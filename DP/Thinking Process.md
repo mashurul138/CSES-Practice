@@ -6,3 +6,7 @@ We got unlimited supple of coin P[i]. We need to combine each coin to get the ta
 
 # Coin Minimizing 1
 Same as before but instead of calculating the minimum, we are adding the all possible ways
+
+# Removing Digits
+There's two way of doing this, 1. Applying greedy method, selecting the max digit and then subtracting it. And 2. dp;
+Iterating all the possibilities until found the min result. And keeping the result stored in DP table
