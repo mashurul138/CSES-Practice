@@ -41,7 +41,9 @@ Stick Length
 
 
 Missing Coin Sum 
-1.This code sorts the coins and keeps extending the smallest unmakeable sum smallest until it finds a coin larger than smallest, at which point smallest is the answer.
+1. This code sorts the coins and keeps extending the smallest unmakeable sum smallest until it finds a coin larger than smallest, at which point smallest is the answer.
+
+
 
 
 
