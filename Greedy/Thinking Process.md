@@ -44,6 +44,11 @@ Missing Coin Sum
 1. This code sorts the coins and keeps extending the smallest unmakeable sum smallest until it finds a coin larger than smallest, at which point smallest is the answer.
 
 
+Collecting Numbers
+1. idea was simple if x come after x+1 then move increases 1 time
+2. to check that in o(n) time maintain a array of index !
+
+
 
 
 

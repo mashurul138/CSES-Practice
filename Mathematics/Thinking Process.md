@@ -24,3 +24,16 @@
 **Thoughts:**  
 1. The largest GCD divides minimum 2 numbers in the array.
 2. So assume max value in the array is the gcd, count the frequency of the divisors, if the count if greater than or equal to 2 then, this is the highest GCD value.
+
+## [Sum Of Divisors](https://cses.fi/problemset/task/1082/)
+**Thoughts:**  
+1. Iterative process exceeds time limit
+2. find a range that contributes same amount of time in the answer
+3. apply sum of divisor formula. SOD(n) = Sum(d*floor(n/d))
+4. use int128 or inverse modular to avoid overflow
+
+## [Prime Multiples](https://cses.fi/problemset/task/2185/)
+**Thoughts:**  
+1. (A U B U C) = A + B + C - AB - AC - BC + ABC
+2. check all subset
+3. if the subset is odd length add its count else substract
