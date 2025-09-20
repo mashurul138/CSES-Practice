@@ -5,6 +5,21 @@ using ll = long long int;
 const ll MOD = 1e9 + 7;
 const ll INV2 = (MOD + 1) / 2;
 
+ll sumOfDivisors(ll n)
+{
+    ll ans = 0, divisor = 1;
+    while (divisor <= n)
+    {
+        ll quotient = n / divisor;
+        ll LDivisor = n / quotient;
+        ll cnt = LDivisor - divisor + 1;
+        __int128_t sum = (__int128_t)cnt * (divisor + LDivisor) / 2;
+        ans = (ans + (sum * quotient % MOD)) % MOD;
+        divisor = LDivisor + 1;
+    }
+    return ans;
+}
+
 int main()
 {
     ios::sync_with_stdio(false);
@@ -13,25 +28,6 @@ int main()
 
     ll n;
     cin >> n;
-    ll result = 0;
-    ll i = 1;
-    while (i <= n)
-    {
-
-        ll q = n / i;
-        ll last = n / q;
-
-        ll i_mod = i % MOD;
-        ll last_mod = last % MOD;
-
-        ll len = (last_mod - i_mod + 1 + MOD) % MOD;
-
-        ll sumRange = len * ((i_mod + last_mod) % MOD) % MOD * INV2 % MOD;
-
-        result = (result + (q % MOD) * sumRange % MOD) % MOD;
-
-        i = last + 1;
-    }
-    cout << result << endl;
+    cout << sumOfDivisors(n) << endl;
     return 0;
 }
