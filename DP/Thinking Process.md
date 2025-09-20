@@ -11,3 +11,8 @@ Same as before but instead of calculating the minimum, we are adding the all pos
 [https://cses.fi/problemset/task/1637/](https://cses.fi/problemset/task/1637/)  
 There's two way of doing this, 1. Applying greedy method, selecting the max digit and then subtracting it. And 2. dp;
 Iterating all the possibilities until found the min result. And keeping the result stored in DP table
+
+# Grid Path I
+[https://cses.fi/problemset/task/1638](https://cses.fi/problemset/task/1638)  
+In this problem we need to find path from last cell to first cell. we will caluculate every way, in ths case its hyst side and updown. We will cancwel the path if we encounter '*'
+
