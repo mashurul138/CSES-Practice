@@ -48,6 +48,10 @@ Collecting Numbers
 1. idea was simple if x come after x+1 then move increases 1 time
 2. to check that in o(n) time maintain a array of index !
 
+Playlist
+1. use map for counting frequency
+2. and sliding window for max sub sequnce 
+
 
 
 
