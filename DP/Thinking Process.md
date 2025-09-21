@@ -16,3 +16,6 @@ Iterating all the possibilities until found the min result. And keeping the resu
 [https://cses.fi/problemset/task/1638](https://cses.fi/problemset/task/1638)  
 In this problem we need to find path from last cell to first cell. we will caluculate every way, in ths case its hyst side and updown. We will cancwel the path if we encounter '*'
 
+# Book Shop
+[https://cses.fi/problemset/task/1158] (https://cses.fi/problemset/task/1158)
+We need to apply 0/1 knapsack.Knapsack giving perfect solution but guess what? YESSSS TLEEEEE. Shithead
