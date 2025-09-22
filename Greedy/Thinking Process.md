@@ -50,7 +50,13 @@ Collecting Numbers
 
 Playlist
 1. use map for counting frequency
-2. and sliding window for max sub sequnce 
+2. and sliding window for max sub sequnce
+
+Traffic Light
+1. Understanding the problem was easy !
+2. just needed to update ranges
+3. main challenge was using set and multiset properly to avoid tle !
+
 
 
 
