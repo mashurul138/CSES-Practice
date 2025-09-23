@@ -37,3 +37,7 @@
 1. (A U B U C) = A + B + C - AB - AC - BC + ABC
 2. check all subset
 3. if the subset is odd length add its count else substract
+
+## [Binomial Coefficients](https://cses.fi/problemset/task/1079/)
+**Thoughts:**  
+1. pre calculate all possible factorial and inverse factorial upto largest possible (a/b)
