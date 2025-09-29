@@ -18,26 +18,29 @@ ll modPow(ll a, ll b)
     return res;
 }
 
-ll invN(ll n)
+ll invN(ll n, ll mod)
 {
-    return modPow(n, MOD - 2);
+    if (n == 1)
+        return 1;
+    return (mod - ((mod / n) * invN(mod % n, mod)) % mod + mod) % mod;
+    // return modPow(n, MOD - 2);
 }
 
 void divisorAnalysis()
 {
     int n;
     cin >> n;
-    ll num = 1, divisor = 1, sum = 1, invDiv = 1, product = 1;
+    ll num = 1, divisor = 1, sum = 1, sqrtN = 1, product;
     while (n--)
     {
         int x, k;
         cin >> x >> k;
         num = num * modPow(x, k) % MOD;
         divisor = divisor * (k + 1) % MOD;
-        sum = (sum * (modPow(x, k + 1) - 1) % MOD) * invN(x - 1) % MOD;
-        product = modPow(product, k + 1) * modPow(modPow(x, k * (k + 1) / 2), invDiv) % MOD;
-        invDiv = invDiv * (k + 1) % (MOD - 1);
+        sum = (sum * (modPow(x, k + 1) - 1) % MOD) * invN(x - 1, MOD) % MOD;
+        sqrtN = sqrtN * modPow(x, k / 2) % MOD;
     }
+    product = (divisor & 1) ? product = modPow(sqrtN, divisor) : modPow(num, divisor / 2);
     cout << divisor << " " << sum << " " << product << endl;
 }
 
