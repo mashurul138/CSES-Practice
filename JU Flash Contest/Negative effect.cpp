@@ -87,11 +87,40 @@ bool isPrime(T n) // check a number is prime or not
 
 void solve()
 {
-    ll x1, x2, x3, x4, h;
-    cin >> x1 >> x2 >> x3 >> x4 >> h;
-    ll l = max(x1, x3), r = min(x2, x4);
-    ll overlap = max(0ll, r - l);
-    outnl(overlap * h);
+    ll n, m;
+    cin >> n >> m;
+
+    if (n == 1)
+    {
+        cout << m;
+        return;
+    }
+
+    ll a[n];
+    ll sum[n];
+    cin >> a[0];
+    sum[0] = a[0];
+
+    for (ll i = 1; i < n; i++)
+    {
+        cin >> a[i];
+        sum[i] = a[i] + sum[i - 1];
+    }
+
+    ll maxi[n];
+    maxi[0] = sum[n - 1] - a[0];
+    maxi[n - 1] = sum[n - 1] - a[n - 1];
+
+    for (ll i = 1; i < n - 1; i++)
+    {
+        maxi[i] = max(max(sum[i - 1], sum[n - 1] - sum[i]), sum[n - 1] - a[i] + m);
+    }
+
+    for (ll i = 0; i < n; i++)
+    {
+        cout << maxi[i] << " ";
+    }
+    cout << endl;
 }
 
 int main()

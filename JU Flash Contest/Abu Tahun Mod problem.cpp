@@ -87,11 +87,7 @@ bool isPrime(T n) // check a number is prime or not
 
 void solve()
 {
-    ll x1, x2, x3, x4, h;
-    cin >> x1 >> x2 >> x3 >> x4 >> h;
-    ll l = max(x1, x3), r = min(x2, x4);
-    ll overlap = max(0ll, r - l);
-    outnl(overlap * h);
+    
 }
 
 int main()
